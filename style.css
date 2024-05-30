@@ -45,12 +45,12 @@ body,
 
 #instruction-text {
     position: absolute;
-    top: 62%;
+    top: 60%;
     color: #333;
-    width: 300px;
+    width: 50vh;
     text-align: center;
     text-transform: capitalize;
-    padding: 30px;
+    padding: 45px;
     margin: 0;
 }
 
@@ -98,41 +98,27 @@ body,
     display: contents;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:770px) {
     #logo {
         width: 35vh;
     }
 
     #instruction-text {
-        width: 50vh;
         font-size: xx-large;
     }
-}
-
-@media screen and (max-width:430px) {
-    #logo {
-        width: 25vh;
-    }
-
-    #instruction-text {
-        width: 45vh;
-        padding: 10px;
-        font-size: x-large;
-    }
-
     #game-board {
-        grid-template-rows: repeat(20, 10px);
-        grid-template-columns: repeat(20, 10px);
+        grid-template-rows: repeat(20, 15px);
+        grid-template-columns: repeat(20, 15px);
     }
 }
 
-@media screen and (max-width:320px) {
+@media screen and (max-width:450px) {
     #logo {
-        width: 25vh;
+        width: 15vh;
     }
 
     #instruction-text {
-        width: 25vh;
+        width: 20vh;
         padding: 10px;
         font-size: larger;
     }
