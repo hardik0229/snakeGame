@@ -97,22 +97,6 @@ body,
 .content {
     display: contents;
 }
-@media screen and (max-width:320px) {
-    #logo {
-        width: 25vh;
-    }
-
-    #instruction-text {
-        width: 25vh;
-        padding: 10px;
-        font-size: larger;
-    }
-
-    #game-board {
-        grid-template-rows: repeat(20, 10px);
-        grid-template-columns: repeat(20, 10px);
-    }
-}
 
 @media screen and (max-width:768px) {
     #logo {
@@ -134,6 +118,23 @@ body,
         width: 45vh;
         padding: 10px;
         font-size: x-large;
+    }
+
+    #game-board {
+        grid-template-rows: repeat(20, 10px);
+        grid-template-columns: repeat(20, 10px);
+    }
+}
+
+@media screen and (max-width:320px) {
+    #logo {
+        width: 25vh;
+    }
+
+    #instruction-text {
+        width: 25vh;
+        padding: 10px;
+        font-size: larger;
     }
 
     #game-board {
