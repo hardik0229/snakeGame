@@ -13,23 +13,38 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="scores">
-            <h1 id="score">000</h1>
-            <h1 id="highScore">000</h1>
-        </div>
-        <div class="game-border-1">
-            <div class="gane-border-2">
-                <div class="game-border-3">
-                    <div id="game-board">
+    <span id="body">
+        <div class="container">
+            <div class="scores">
+                <h1 id="score">000</h1>
+                <h1 id="highScore">000</h1>
+            </div>
+            <div class="game-border-1">
+                <div class="gane-border-2">
+                    <div class="game-border-3">
+                        <div id="game-board">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="content">
-        <h1 id="instruction-text">Press Space to Begin the Game</h1>
-        <img id="logo" src="./snake-logo.png" alt="snake-logo">
+        <div class="content">
+            <h1 id="instruction-text">Press Space to Begin the Game</h1>
+            <img id="logo" src="./snake-logo.png" alt="snake-logo">
+        </div>
+    </span>
+    <div class="block">
+        <div id="block1">
+            <span class="button" onclick="handleButtonInput('↑')">↑</span>
+        </div>
+        <div id="block2">
+            <span class="button" onclick="handleButtonInput('←')">←</span>
+            <span class="button" onclick="startGame()"></span>
+            <span class="button" onclick="handleButtonInput('→')">→</span>
+        </div>
+        <div id="block3">
+            <span class="button" onclick="handleButtonInput('↓')">↓</span>
+        </div>
     </div>
 </body>
 

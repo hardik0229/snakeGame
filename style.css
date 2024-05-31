@@ -1,4 +1,9 @@
-body {
+body{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5vh;
+}
+#body {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -45,7 +50,7 @@ body,
 
 #instruction-text {
     position: absolute;
-    top: 60%;
+    top: 61%;
     color: #333;
     width: 50vh;
     text-align: center;
@@ -97,6 +102,26 @@ body,
 .content {
     display: contents;
 }
+.block{
+    display: none;
+}
+#block2{
+    display: grid;
+    gap: 3vh;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    justify-items: center;
+}
+.button{
+    color: #333;
+    width: 10vh;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #abb78a;
+    font-size: 7vh;
+}
 
 @media screen and (max-width:770px) {
     #logo {
@@ -121,10 +146,19 @@ body,
         width: 20vh;
         padding: 10px;
         font-size: larger;
+        top: 35%;
     }
 
     #game-board {
         grid-template-rows: repeat(20, 10px);
         grid-template-columns: repeat(20, 10px);
+    }
+    #body{
+        height: 50vh;
+    }
+    .block{
+        display: grid;
+        gap: 2vh;
+        justify-items: center;
     }
 }

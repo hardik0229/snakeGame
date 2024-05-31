@@ -127,6 +127,22 @@ function handleKeyPress(event) {
 		}
 	}
 }
+function handleButtonInput(button){
+	switch (button) {
+		case '↑':
+			direction = "up";
+			break;
+		case '↓':
+			direction = "down";
+			break;
+		case '←':
+			direction = "left";
+			break;
+		case '→':
+			direction = "right";
+			break;
+	}
+}
 document.addEventListener("keydown", handleKeyPress);
 function increaseSpeed() {
 	// console.log(gameSpeedDelay);
